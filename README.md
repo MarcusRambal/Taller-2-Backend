@@ -15,17 +15,17 @@
 
 ## 4. Comandos Utilizados
 
-docker ps
-docker build -t backend-api .
-docker run -d  --name backend-api -p 3000:3000 -e PORT=3000 backend-api
-docker logs backend-api
-docker inspect backend-api
-docker compose ps
-docker compose down
-docker compose up -d
-docker compose up --build -d
-docker network ls
-docker network inspect
+- docker ps 
+- docker build -t backend-api .
+- docker run -d  --name backend-api -p 3000:3000 -e PORT=3000 backend-api
+- docker logs backend-api
+- docker inspect backend-api
+- docker compose ps
+- docker compose down
+- docker compose up -d
+- docker compose up --build -d
+- docker network ls
+- docker network inspect
 
 ## 5. Preguntas
 
