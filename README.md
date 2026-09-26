@@ -8,7 +8,9 @@
 
 
 ## 2. Descripcion de la solucion
+Una empresa tiene una API REST desarrollada con Node.js y Express. La API actualmente funciona directamente en http://localhost:3000. El equipo de infraestructura solicita que laAPI sea ejecutada dentro de Docker, que Nginx sea el punto de entrada y que los usuarios no accedan directamente al contenedor de la API.
 
+Para solucionar este problema se configura un Docker Compose que integra la api y nginx como Proxy. Se elimina la exposiicon directa del Puerto del backend al host, ahora todo el trafico pasa por nginx, el cual resuelve el enrutamiento hacia la API utilizando el DNS de docker compose.
 
 ## 3. Arquitectura propuesta
 <img width="953" height="539" alt="image" src="https://github.com/user-attachments/assets/3735b558-bb7e-4103-9384-0d4dbdc4fabe" />
