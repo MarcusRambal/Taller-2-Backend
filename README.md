@@ -2,10 +2,10 @@
 
 ## 1. Ejecucion
 
-git clone https://github.com/MarcusRambal/Taller-2-Backend.git
-cd 
+ - git clone https://github.com/MarcusRambal/Taller-2-Backend.git
+ - cd 
+ - docker compose up --build -d
 
-docker compose up --build -d
 
 ## 2. Descripcion de la solucion
 
