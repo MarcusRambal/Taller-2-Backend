@@ -35,7 +35,7 @@ El puerto del contenedor es interno de docker, mientras que el puerto publicado 
 
 - ¿Por qué http://api:3000 funciona entre contenedores, mientras que http://localhost:3000 no representa correctamente al contenedor api? 
 
-Esto sucede por como docker maneja internamente las redes internas, al usar http://localhost:3000 lo que expones es el contenedor definido en ese puerto HOST,  http://api:3000 funciona por la red virtual que crea docker internamente.
+Cada contenedor corre en su propia red aislada, cuando un servicio como ngix intenta https://localhost:3000, busca el servicio dentro de su propio contenedor, falla porque no hay nada ejecutandose en el Puerto 3000. En cambio si usa, http://api:3000 funciona porque compose genera una red virtual con un DNS interno
 
 
 ### 5.1 Port vs Expose
