@@ -3,7 +3,7 @@
 ## 1. Ejecucion
 
  - git clone https://github.com/MarcusRambal/Taller-2-Backend.git
- - cd 
+ - cd Taller-2-Backend
  - docker compose up --build -d
 
 
