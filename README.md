@@ -11,7 +11,8 @@
 
 
 ## 3. Arquitectura propuesta
-<img width="955" height="531" alt="image" src="https://github.com/user-attachments/assets/73da32fa-c20f-402a-abd1-1f993d49d37e" />
+<img width="953" height="539" alt="image" src="https://github.com/user-attachments/assets/3735b558-bb7e-4103-9384-0d4dbdc4fabe" />
+
 
 
 ## 4. Comandos Utilizados
