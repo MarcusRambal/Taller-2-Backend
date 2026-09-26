@@ -58,25 +58,29 @@ En el caso de que usemos localhost para redireccionar a otro contenedor no podri
 
 <img width="606" height="347" alt="Screenshot 2026-09-26 143717" src="https://github.com/user-attachments/assets/18f58686-66d2-4bba-814e-463f463d0d3f" />
 
-¿Qué error obtiene? 
+- ¿Qué error obtiene? 
 
 502 Bad GateWay
 
-¿Por qué ocurre? 
+- ¿Por qué ocurre? 
 
 Nginx intentó resolver en http://localhost:3000/health  y en http://localhost:3000, no encontró nada.
 
-¿Por qué localhost no representa al contenedor api? 
+- ¿Por qué localhost no representa al contenedor api? 
 
 Porque localhost estaría apuntando al propio contenedor de Nginx, y como no hay nada que se resuelva en las direcciones de 502 
 
-¿Cómo solucionaría el problema? 
+- ¿Cómo solucionaría el problema? 
 
 Configurando el proxy_pass de Nginx a http://api:3000/health y http://api:3000/ , asi Nginx usaría el DNS interno de compose.
 
-¿Qué comando utilizaría para verificar las redes Docker? 
+- ¿Qué comando utilizaría para verificar las redes Docker? 
 
 Primero usando docker network ls y luego docker network inspect ${nombreDeRed}
+
+<img width="716" height="220" alt="Screenshot 2026-09-26 144740" src="https://github.com/user-attachments/assets/6b63212a-2c71-4fab-9a54-0b024e50267d" />
+
+
 <img width="798" height="811" alt="Screenshot 2026-09-26 144804" src="https://github.com/user-attachments/assets/772db719-3f15-4043-8c9a-80733f7ad13c" />
 
 
